@@ -38,7 +38,7 @@ export default async function Products() {
       <div className="text-[1.5em] xl:text[3em] font-bold xl:mb-[1em]">POPULAR PRODUCTS</div>
       <div className="grid grid-cols-1 auto-rows-auto xl:grid-cols-4 justify-between">
         {products.map(item => (
-          <div className="py-4">
+          <div className="py-4" key={item.title}>
             <div
               className="w-[300px] h-[200px] rounded-t-2xl bg-white/30 border-2 flex justify-center items-center  mb-8 relative"
               style={{
